@@ -29,7 +29,7 @@ export default {
     initCourses(){
       let that = this;
       this.$axios.request({
-        url: 'http://52.15.206.110:8080/api/courses/',
+        url: 'http://52.15.206.110:8099/api/courses/',
         method: 'GET'
       }).then(function (response) {
         that.courseList = response.data

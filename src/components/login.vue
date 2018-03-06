@@ -24,7 +24,7 @@
         console.log(this);
         var that = this;
         this.$axios.request({
-          url: 'http://52.15.206.110:8080/api/login',
+          url: 'http://52.15.206.110:8099/api/login',
           method: 'POST',
           data: {
             username: this.username,

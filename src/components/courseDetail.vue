@@ -115,7 +115,7 @@
       initCourseDetail() {
         let nid = this.courseId;
         let that = this;
-        let url = 'http://52.15.206.110:80/api/coursedetail/' + nid;
+        let url = 'http://52.15.206.110:8099/api/coursedetail/' + nid;
         this.$axios.request({
           url: url,
           method: 'GET',
@@ -145,7 +145,7 @@
           alert('请选择价格')
         }else{
           this.$axios.request({
-            url: 'http://52.15.206.110:80/api/shopCart/',
+            url: 'http://52.15.206.110:8099/api/shopCart/',
             method: 'POST',
             data: {
               course_id: this.courseId,
